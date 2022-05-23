@@ -1,16 +1,11 @@
 import torch
-from shallow import Shallow, KernelCreator, Activations, gen_uniform_data
+from shallow import Shallow, KernelCreator, Activations
 import matplotlib.pyplot as plt
-#from matplotlib import cm, colors
-
-#from mpl_toolkits.mplot3d import Axes3D
-#from scipy.special import sph_harm
 
 import numpy as np
 import scipy.linalg
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
-#from torchvision.datasets.mnist import MNIST
 from torchvision.datasets import CIFAR10
 
 
@@ -46,7 +41,7 @@ class FigureGen:
         return eigs 
 
 
-    def gen_neurips_fig(self, batch_size, width, num_runs):
+    def gen_fig(self, batch_size, width, num_runs):
         data_train = CIFAR10('./data/cifar',
                              train=True,
                              download=True,
@@ -81,7 +76,6 @@ class FigureGen:
 
 if __name__ == '__main__':
     figgen = FigureGen()
-    # figgen.gen_neurips_fig(2000, 4000, 10)
-    figgen.gen_neurips_fig(200, 400, 10)
+    figgen.gen_fig(2000, 4000, 10)
 
 

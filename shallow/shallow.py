@@ -403,15 +403,5 @@ class TestKernel(unittest.TestCase):
         return(nx*ny*(np.sin(theta) + (np.pi - theta)*np.cos(theta))/(2.0 * np.pi))
 
 
-def gen_uniform_data(input_d, n):
-    if input_d == 1:
-        xs = -1.0 + 2*np.random.uniform(size=(1,n))
-        xs = np.sort(xs)
-    else:
-        xs = np.random.randn(input_d, n)
-        xs /= np.linalg.norm(xs, axis=0)
-    return xs
-
-
 if __name__ == '__main__':
     unittest.main() 
