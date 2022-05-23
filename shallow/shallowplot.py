@@ -15,8 +15,7 @@ class FigureGen:
         xs,
         input_d,
         batch_size,
-        width,
-        suptitle
+        width
     ):
         act  =  Activations.softplus
         d_act = Activations.d_softplus
@@ -28,8 +27,7 @@ class FigureGen:
         net = Shallow(width,
                       input_d,
                       act,
-                      d_act,
-                      True)
+                      d_act)
 
         creator = KernelCreator(net)
         ker = creator.k_total(xs)
@@ -65,14 +63,14 @@ class FigureGen:
                 xs,
                 input_d, 
                 batch_size,
-                width,
-                'NTK Spectrum on CIFAR10'
+                width
             ) 
 
             axs.plot(spec[:batch_size//2])
 
         fig.set_size_inches(8, 6)
         fig.savefig('shallow_cifar.png')
+
 
 if __name__ == '__main__':
     figgen = FigureGen()
