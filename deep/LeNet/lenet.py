@@ -70,7 +70,6 @@ class F5(nn.Module):
 
         '''
         Original Net had Softmax at this layer.
-        We removed so training with MSELoss would be feasible
 
         self.f5 = nn.Sequential(OrderedDict([
             ('f5', nn.Linear(84, 10)),
