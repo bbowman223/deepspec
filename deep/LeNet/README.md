@@ -1,5 +1,5 @@
 # LeNet-5
-This implements a slightly modified LeNet-5 [LeCun et al., 1998a]
+This folder implements LeNet-5 [LeCun et al., 1998a].  We remove the softmax layer from the model so that the final layer is linear.
 
 
 ## References
