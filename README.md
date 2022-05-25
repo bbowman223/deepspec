@@ -1,3 +1,8 @@
+This repository contains the code for the manuscript 
+"Spectral Bias Outside the Training Set for Deep
+Networks in the Kernel Regime".
+
+
 This project is organized into two directories.
 * **deep/**
     * Computes the NTK spectrum for LeNet-5 using Pytorch
