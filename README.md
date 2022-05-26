@@ -21,3 +21,6 @@ unit tests written whereas the deep case does not.
 
 The directories **deep/** and **shallow/** both have their own **README** files to explain
 the project organization
+
+The dependencies for the project are specified in the **environment.yml** file.
+If you use [Anaconda](https://www.anaconda.com/) you can construct the environment from this file.
