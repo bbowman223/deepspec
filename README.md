@@ -26,6 +26,5 @@ The dependencies for the project are specified in the **environment.yml** file.
 If you use [Anaconda](https://www.anaconda.com/) you can construct the environment from this file.
 
 Acknowledgements:
-
 We would like to thank [Yonatan Dukler](https://github.com/dukleryoni) for sharing portions of this code during a project in 2019.
 The code to compute the NTK Gram matrix in PyTorch is powered by [autograd-hacks](https://github.com/cybertronai/autograd-hacks)
