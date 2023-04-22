@@ -1,7 +1,19 @@
-This repository contains the code for the manuscript 
-"Spectral Bias Outside the Training Set for Deep
-Networks in the Kernel Regime".
-
+This repository contains the code for the paper 
+["Spectral Bias Outside the Training Set for Deep
+Networks in the Kernel Regime"](https://arxiv.org/abs/2206.02927) (NeurIPS 2022).  If you use this code in a paper, please cite this paper using the bibtex reference below
+```
+@inproceedings{NEURIPS2022_c4006ff5,
+ author = {Bowman, Benjamin and Montufar, Guido F},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {S. Koyejo and S. Mohamed and A. Agarwal and D. Belgrave and K. Cho and A. Oh},
+ pages = {30362--30377},
+ publisher = {Curran Associates, Inc.},
+ title = {Spectral Bias Outside the Training Set for Deep Networks in the Kernel Regime},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2022/file/c4006ff54a7bbda74c09bad6f7586f5b-Paper-Conference.pdf},
+ volume = {35},
+ year = {2022}
+}
+```
 
 This project is organized into two directories.
 * **deep/**
